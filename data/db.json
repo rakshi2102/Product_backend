@@ -1,0 +1,125 @@
+{
+  "rateRules": [
+    {
+      "id": "RR-101",
+      "name": "Electronics Min/Max Threshold",
+      "productCategory": "Electronics",
+      "minRate": 10,
+      "maxRate": 5000,
+      "currency": "USD",
+      "unit": "pcs",
+      "priority": 1,
+      "isActive": true,
+      "description": "Standard pricing bounds for electronic gadgets and hardware",
+      "createdAt": "2026-09-19T11:24:08.579Z"
+    },
+    {
+      "id": "RR-102",
+      "name": "Software License Rate Bounds",
+      "productCategory": "Software",
+      "minRate": 5,
+      "maxRate": 25000,
+      "currency": "USD",
+      "unit": "license",
+      "priority": 2,
+      "isActive": true,
+      "description": "SaaS and perpetual license price boundaries",
+      "createdAt": "2026-09-19T11:24:08.582Z"
+    },
+    {
+      "id": "RR-103",
+      "name": "Professional Services Hourly Bounds",
+      "productCategory": "Services",
+      "minRate": 50,
+      "maxRate": 500,
+      "currency": "USD",
+      "unit": "hour",
+      "priority": 1,
+      "isActive": true,
+      "description": "Rate rule for consulting and professional services",
+      "createdAt": "2026-09-19T11:24:08.582Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "PROD-001",
+      "sku": "SKU-ELEC-01",
+      "name": "Enterprise Router X10",
+      "category": "Electronics",
+      "price": 1250,
+      "cost": 750,
+      "taxRate": 18,
+      "unit": "pcs",
+      "status": "Active",
+      "mappedAccountId": "ACC-4001",
+      "mappedAccountCode": "4001",
+      "mappedAccountName": "Hardware Revenue",
+      "createdAt": "2026-09-19T11:24:08.582Z",
+      "updatedAt": "2026-09-19T11:24:08.582Z"
+    },
+    {
+      "id": "PROD-002",
+      "sku": "SKU-SOFT-02",
+      "name": "Cloud Suite Annual License",
+      "category": "Software",
+      "price": 2999,
+      "cost": 300,
+      "taxRate": 0,
+      "unit": "license",
+      "status": "Active",
+      "mappedAccountId": "ACC-4002",
+      "mappedAccountCode": "4002",
+      "mappedAccountName": "Software Subscription Revenue",
+      "createdAt": "2026-09-19T11:24:08.582Z",
+      "updatedAt": "2026-09-19T11:24:08.582Z"
+    }
+  ],
+  "accounts": [
+    {
+      "id": "ACC-4001",
+      "code": "4001",
+      "name": "Hardware Revenue",
+      "type": "Revenue",
+      "category": "Product Sales",
+      "balance": 154000,
+      "currency": "USD",
+      "status": "Active",
+      "createdAt": "2026-09-19T11:24:08.582Z",
+      "updatedAt": "2026-09-19T11:24:08.582Z"
+    },
+    {
+      "id": "ACC-4002",
+      "code": "4002",
+      "name": "Software Subscription Revenue",
+      "type": "Revenue",
+      "category": "Software",
+      "balance": 489000,
+      "currency": "USD",
+      "status": "Active",
+      "createdAt": "2026-09-19T11:24:08.582Z",
+      "updatedAt": "2026-09-19T11:24:08.582Z"
+    }
+  ],
+  "mappings": [],
+  "audits": [
+    {
+      "id": "AUD-RUN-1789819707812",
+      "fileName": "Sample File.xlsx",
+      "fileSize": 5910,
+      "rowsCount": 7,
+      "auditedAt": "2026-09-19T12:08:27.812Z",
+      "summary": {
+        "totalRows": 7,
+        "errorRows": 7,
+        "salesLedgerMismatch": 7,
+        "rangeDeviations": 0,
+        "invalidUom": 7,
+        "compliance": "0%",
+        "complianceValue": 0,
+        "auditedAt": "2026-09-19T12:08:27.811Z"
+      },
+      "issuesCount": 14
+    }
+  ],
+  "validationErrors": []
+}
